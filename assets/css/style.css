@@ -1,3 +1,114 @@
+/* ------------------------------------------------- */
+/* --------------------- GLOBAL ---------------------*/
+/* ------------------------------------------------- */
+
 body {
   font-family: TS-Reg, sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 1092px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 10px;
+}
+
+.smalltopmargin {
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------- */
+/* --------------------- HEADER ---------------------*/
+/* ------------------------------------------------- */
+
+header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header div {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+header img {
+  width: 200px;
+}
+
+header nav div {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  font-weight: bold;
+}
+
+nav button {
+  margin: auto 0;
+  width: 150px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+
+/* ----------------------------------------------- */
+/* --------------------- MAIN -------------------- */
+/* ----------------------------------------------- */
+
+main section {
+  padding-top: 30px;
+}
+
+h1 {
+  font-family: TS-Med;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+main section p {
+  font-size: 15px;
+  color: #333333;
+}
+
+main nav {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main nav div {
+  flex: 1;
+  height: 70px;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+main nav p {
+  font-family: TS-Med;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main img {
+  object-fit: scale-down;
 }
