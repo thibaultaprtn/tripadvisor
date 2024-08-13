@@ -17,21 +17,21 @@
       <div class="container">
         <img src="./assets/img/tripadvisor_logo.svg" alt="tripadvisor_logo" />
         <nav>
-          <div>
+          <div class="hovergrey">
             <i class="fa-solid fa-pen"></i>
             <p>Avis</p>
           </div>
-          <div>
+          <div class="hovergrey">
             <i class="fa-regular fa-heart"></i>
             <p>Voyages</p>
           </div>
-          <div>
+          <div class="hovergrey">
             <i class="fa-regular fa-bell"></i>
             <p>Alertes</p>
           </div>
           <div>
             <button>Connectez-Vous</button>
-            <div>
+            <div class="hovergrey">
               <i class="fa-solid fa-cart-shopping"></i>
               <p>Panier</p>
             </div>
@@ -51,6 +51,11 @@
             cette page : <a href="">en savoir plus.</a>
           </p>
         </div>
+
+        <!----------------------------------------------------------------------------->
+        <!------------------------------- Navigation ---------------------------------->
+        <!----------------------------------------------------------------------------->
+
         <nav>
           <div>
             <p>Hôtels</p>
@@ -78,16 +83,67 @@
           </div>
         </nav>
 
-        <div class="flex">
-          <div style="flex: 1">
+        <!----------------------------------------------------------------------------->
+        <!------------------------------ Group Photos --------------------------------->
+        <!----------------------------------------------------------------------------->
+
+        <div class="groupphoto">
+          <div class="leftpic">
             <img src="./assets/img/view.jpg" alt="paris" />
           </div>
-          <div
-            class="flex"
-            style="flex: 5; display: flex; flex-direction: column"
-          >
+          <div class="rightpics">
             <img src="./assets/img/caption-8.jpg" alt="paris2" />
             <img src="./assets/img/caption-9.jpg" alt="paris3" />
+          </div>
+        </div>
+
+        <!----------------------------------------------------------------------------->
+        <!---------------------------------- Nav 2 ------------------------------------>
+        <!----------------------------------------------------------------------------->
+
+        <div class="nav2">
+          <div class="nav2left">
+            <a href="" class="linkover">Europe</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="" class="linkover">France</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="" class="linkover">Île-de-France</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="" class="linkover">Paris</a>
+            <i class="fa-solid fa-caret-down"></i>
+            <!-- rajouter un petit bouton -->
+          </div>
+          <p>Visiter : Paris</p>
+        </div>
+
+        <!----------------------------------------------------------------------------->
+        <!---------------------------------- BLOC2 ------------------------------------>
+        <!----------------------------------------------------------------------------->
+
+        <div class="intermdiv">
+          <div style="width: 540px">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p id="description">
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+
+          <div class="intermdivright">
+            <div class="intermdivrightupper">
+              <h3>Paris : commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button id="voyage">Créez un voyage</button>
+            </div>
+            <img src="./assets/img/maps_cnuhsr.png" alt="maps" />
           </div>
         </div>
       </section>
