@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tripadvisor</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/fonts.css" />
     <script
-      src="https://kit.fontawesome.com/ed8b37a29c.js"
+      src="https://kit.fontawesome.com/fc925bcebf.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -39,12 +39,22 @@
         </nav>
       </div>
     </header>
+
+    <!----------------------------------------------------------------------------->
+    <!------------------------------- Main ---------------------------------->
+    <!----------------------------------------------------------------------------->
+
+    <!----------------------------------------------------------------------------->
+    <!------------------------------- Top Section ---------------------------------->
+    <!----------------------------------------------------------------------------->
+
     <main>
       <section class="container">
         <div>
           <div class="flex gap">
             <h1 style="color: #ff5e5e">Explorez</h1>
             <h1>Paris</h1>
+            <!-- beaucoup plus simple d'utiliser un span -->
           </div>
           <p class="smalltopmargin">
             Les revenus influencent le choix des expériences présentées sur
@@ -146,8 +156,521 @@
             <img src="./assets/img/maps_cnuhsr.png" alt="maps" />
           </div>
         </div>
+
+        <h2>Paris : Les immanquables</h2>
+
+        <!----------------------------------------------------------------------------->
+        <!------------------------------- CARROUSSEL 1 -------------------------------->
+        <!----------------------------------------------------------------------------->
+
+        <div class="startcarrousel flex spacebetween">
+          <div class="leftcarroussel">
+            <h3>Se divertir</h3>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
+            </p>
+            <a href="">Tout afficher</a>
+          </div>
+          <div class="carroussel">
+            <!----------------------------------------------------->
+            <!--------------------- Photo 1 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Tour Eiffel</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>139 901</p>
+              </div>
+              <p class="monumentdescription">
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 2 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/arc-triomphe.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Arc de Triomphe</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+                <p>56 987</p>
+              </div>
+              <p class="monumentdescription">
+                Bâtiments architecturaux, Sites historiques
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 3 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/louvre.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Tour Eiffel</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>100 845</p>
+              </div>
+              <p class="monumentdescription">
+                Bâtiments architecturaux, Musées d'art
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 4 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/rodin.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Musée Rodin</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>187 981</p>
+              </div>
+              <p class="monumentdescription">Musées spécialisés</p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 5 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/ndp.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Cathédrale Notre-Dame de Paris</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>139 901</p>
+              </div>
+              <p class="monumentdescription">
+                Bâtiments architecturaux, Sites historiques
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 6 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/shakespeare.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname"
+                >Librairie Shakespear and Company</a
+              >
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>140 321</p>
+              </div>
+              <p class="monumentdescription">Bibliothèques, Grands magasins</p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 7 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/orsay.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Musée d'Orsay</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>67 761</p>
+              </div>
+              <p class="monumentdescription">Musées d'art</p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 8 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/puces.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Marché aux Puces de Saint-Ouen</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>103 485</p>
+              </div>
+              <p class="monumentdescription">
+                Antiquaires, Marchés aux puces & Marchés de rue Saint-Ouen,
+                France À 5,4 kilomètres de Paris
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!----------------------------------------------------------------------------->
+        <!------------------------------- CARROUSSEL 2 -------------------------------->
+        <!----------------------------------------------------------------------------->
+
+        <div class="startcarrousel flex spacebetween">
+          <div class="leftcarroussel">
+            <h3>Se restaurer</h3>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <a href="">Tout afficher</a>
+          </div>
+          <div class="carroussel">
+            <!----------------------------------------------------->
+            <!--------------------- Photo 1 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/meals/meal1.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Frenchie</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+                <p>1 297</p>
+              </div>
+              <p class="monumentdescription">
+                €€€€ · Française, Végétariens bienvenus, Plats sans gluten
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 2 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/meals/meal2.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">114 Faubourg</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle"></i> -->
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+                <p>1 754</p>
+              </div>
+              <p class="monumentdescription">
+                €€ · Française, Européenne, Végétariens bienvenus
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 3 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/meals/meal3.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Verjus</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+                <p>545</p>
+              </div>
+              <p class="monumentdescription">
+                €€€ · Française, Européenne, Moderne
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 4 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/meals/meal4.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">ASPIC</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle"></i> -->
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+                <p>2 981</p>
+              </div>
+              <p class="monumentdescription">
+                €€€€ · Française, Européenne, Saine
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 5 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/meals/meal5.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Bistrot chic</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>1 345</p>
+              </div>
+              <p class="monumentdescription">
+                €€€ · Française, Européenne, Saine, Moderne
+              </p>
+            </div>
+
+            <!----------------------------------------------------->
+            <!--------------------- Photo 6 ----------------------->
+            <!----------------------------------------------------->
+
+            <div>
+              <div class="carrousselpic">
+                <img src="./assets/img/meals/meal6.jpg" alt="" />
+                <div class="logolike">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="logotrip">
+                  <i class="fa-solid fa-kiwi-bird"></i>
+                  <p>2022</p>
+                </div>
+              </div>
+              <a href="" class="monumentname">Vive les huîtres</a>
+              <div class="carrousselcomments">
+                <div class="stars">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+                  <!-- <i class="fa-regular fa-circle"></i> -->
+                </div>
+                <p>4 340</p>
+              </div>
+              <p class="monumentdescription">
+                €€€€ · Française, Moderne, Bar à vins
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2>Guide des voyageurs</h2>
+
+        <div class="triptic">
+          <div>
+            <img src="./assets/img/visit1.jpg" alt="" />
+            <p>Best summer things to do in Paris | Eatwith</p>
+            <p class="nbarticles">36 articles</p>
+          </div>
+          <div>
+            <img src="./assets/img/visit2.jpg" alt="" />
+            <p>Les 10 monuments et musées de Paris à faire</p>
+            <p class="nbarticles">10 articles</p>
+          </div>
+          <div>
+            <img src="./assets/img/visit3.jpg" alt="" />
+            <p>Top 10 des choses à faire ou à voir dans le 14ème</p>
+            <p class="nbarticles">10 articles</p>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footerelement">
+        <img src="./assets/img/favicon-tripadvisor.svg" alt="" />
+        <p>
+          Made at
+          <a class="footerspan" href="https://www.lereacteur.io/"
+            >Le Reacteur</a
+          >
+          by
+          <a class="footerspan" href="https://github.com/thibaultaprtn"
+            >Thibault Apretna</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
