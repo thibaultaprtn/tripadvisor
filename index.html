@@ -15,22 +15,28 @@
   <body>
     <header>
       <div class="container">
+        <div class="masked">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <img src="./assets/img/tripadvisor_logo.svg" alt="tripadvisor_logo" />
         <nav>
-          <div class="hovergrey">
+          <div class="hovergrey hidden">
             <i class="fa-solid fa-pen"></i>
             <p>Avis</p>
           </div>
-          <div class="hovergrey">
+          <div class="hovergrey hidden">
             <i class="fa-regular fa-heart"></i>
             <p>Voyages</p>
           </div>
-          <div class="hovergrey">
+          <div class="hovergrey hidden">
             <i class="fa-regular fa-bell"></i>
             <p>Alertes</p>
           </div>
+          <div class="masked">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
           <div>
-            <button>Connectez-Vous</button>
+            <button class="hidden">Connectez-Vous</button>
             <div class="hovergrey">
               <i class="fa-solid fa-cart-shopping"></i>
               <p>Panier</p>
@@ -51,11 +57,8 @@
     <main>
       <section class="container">
         <div>
-          <div class="flex gap">
-            <h1 style="color: #ff5e5e">Explorez</h1>
-            <h1>Paris</h1>
-            <!-- beaucoup plus simple d'utiliser un span -->
-          </div>
+          <h1><span style="color: #ff5e5e">Explorez </span>Paris</h1>
+          <!-- beaucoup plus simple d'utiliser un span -->
           <p class="smalltopmargin">
             Les revenus influencent le choix des expériences présentées sur
             cette page : <a href="">en savoir plus.</a>
@@ -66,7 +69,7 @@
         <!------------------------------- Navigation ---------------------------------->
         <!----------------------------------------------------------------------------->
 
-        <nav>
+        <nav id="navig1">
           <div>
             <p>Hôtels</p>
             <i class="fa-solid fa-bed"></i>
@@ -93,14 +96,50 @@
           </div>
         </nav>
 
+        <nav id="navig2">
+          <div>
+            <p>Hôtels</p>
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <div>
+            <p>Locations de vacances</p>
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <div>
+            <p>Activités</p>
+            <i class="fa-solid fa-ticket"></i>
+          </div>
+          <div>
+            <p>Restaurants</p>
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+        </nav>
+
+        <nav id="navig3">
+          <div>
+            <p>Forum de voyage</p>
+            <i class="fa-regular fa-comments"></i>
+          </div>
+          <div>
+            <p>Plus</p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="display1132">
+            <p>Plus</p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="display1132">
+            <p>Plus</p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </nav>
+
         <!----------------------------------------------------------------------------->
         <!------------------------------ Group Photos --------------------------------->
         <!----------------------------------------------------------------------------->
 
         <div class="groupphoto">
-          <div class="leftpic">
-            <img src="./assets/img/view.jpg" alt="paris" />
-          </div>
+          <img src="./assets/img/view.jpg" alt="paris" />
           <div class="rightpics">
             <img src="./assets/img/caption-8.jpg" alt="paris2" />
             <img src="./assets/img/caption-9.jpg" alt="paris3" />
