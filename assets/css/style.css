@@ -112,7 +112,7 @@ h1 {
   font-weight: bolder;
 }
 
-main section p {
+main section > div > p {
   font-size: 14px;
   color: #333333;
   margin-bottom: 30px;
@@ -125,13 +125,9 @@ main nav {
   gap: 10px;
 }
 
-/* main nav:nth-child(4) {
-  margin-bottom: 30px;
-} */
-
 main nav div {
   flex: 1;
-  height: 70px;
+  /* height: 70px; */
   padding: 15px 15px;
   display: flex;
   justify-content: space-between;
@@ -154,19 +150,9 @@ main nav p {
   font-weight: 400;
 }
 
-#navig2,
-#navig3 {
+.navmasked {
   display: none;
 }
-
-/* .display1132 {
-  display: none;
-} */
-
-/* main nav p:hover {
-  color: white;
-} */
-
 /* ----------------------------------------------- */
 /* ----------------- GROUP PHOTO ---------------- */
 /* ----------------------------------------------- */
@@ -241,32 +227,45 @@ a.linkover:hover {
 /* ----------------------------------------------- */
 
 .intermdiv {
-  height: 470px;
+  height: 472px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  /* gap: 30px; */
+}
+
+.intermdiv > div:first-child {
+  width: 50%;
+  /* height: 100%; */
 }
 
 .intermdivright {
-  border-radius: 50px;
-  width: 420px;
+  width: calc(50% - 120px);
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .intermdivrightupper {
+  flex: 1 1 auto;
+  height: auto;
   border-radius: 20px 20px 0 0;
   background-color: #ff5e5e;
-  padding: 40px 50px 30px 50px;
+  padding: 30px 40px 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 30px;
+  /* gap: 10px; */
 }
+
+.intermdivright div:last-child {
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+  height: 400px;
+}
+
 .intermdivright img {
   border-radius: 0 0 20px 20px;
-  height: 30%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -525,17 +524,24 @@ a.footerspan {
     padding: 0px 20px;
   }
 
-  #navig2,
-  #navig3 {
+  .groupphoto {
+    height: 370px;
+  }
+
+  .navmasked {
     display: flex;
   }
 
-  #navig1 {
-    display: none;
+  .navmain {
+    flex-wrap: wrap;
   }
 
-  .groupphoto {
-    height: 370px;
+  .navmain div {
+    width: calc(25% - 7.5px);
+    /* flex: 0 0 auto; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
   }
 }
 
@@ -548,30 +554,55 @@ a.footerspan {
     display: none;
   }
 
-  #navig2,
-  #navig3 {
+  .groupphoto {
+    height: 276px;
+  }
+
+  .navmasked {
     display: flex;
   }
 
-  #navig1 {
-    display: none;
+  .intermdiv {
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 
-  .groupphoto {
-    height: 276px;
+  .intermdiv > div:first-child {
+    width: 100%;
+  }
+
+  .intermdivright {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* height: 200px; */
+  }
+
+  .intermdivrightupper {
+    width: 50%;
+    height: auto;
+    border-radius: 20px 0px 0 20px;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10px;
+  }
+  .intermdivright div:nth-child(2) {
+    width: 50%;
+    height: 100%;
+  }
+  .intermdivright img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0px;
   }
 }
 
 @media (max-width: 768px) {
-  #navig2,
-  #navig3 {
-    display: flex;
-  }
-
-  #navig1 {
-    display: none;
-  }
-
   .masked {
     display: flex;
   }
@@ -584,6 +615,24 @@ a.footerspan {
     width: 132px;
   }
 
+  /* .groupphoto > img {
+    flex: 3;
+    object-fit: cover;
+  } */
+
+  .rightpics {
+    display: none;
+    /* flex-direction: column;
+    gap: 2px;
+    flex: 2; */
+  }
+
+  /* .rightpics img {
+    height: calc(50% - 1px);
+    width: 100%;
+    object-fit: cover;
+  } */
+
   header nav {
     gap: 0px;
   }
@@ -594,5 +643,18 @@ a.footerspan {
 
   main section h1 {
     font-size: 30px;
+  }
+  .navmasked {
+    display: flex;
+  }
+
+  .navmain {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .navmain div {
+    width: auto;
+    gap: 20px;
   }
 }
