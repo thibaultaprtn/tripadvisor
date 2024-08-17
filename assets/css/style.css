@@ -226,93 +226,80 @@ a.linkover:hover {
 /* ---------------------- BLOC 2 ------------------- */
 /* ----------------------------------------------- */
 
-.intermdiv {
-  height: 472px;
+.section {
+  height: 470px;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
-.intermdiv > div:first-child {
+.section1 {
   width: 50%;
-  /* height: 100%; */
 }
 
-.intermdivright {
+.section2 {
   width: calc(50% - 120px);
   height: 100%;
+  margin-left: 120px;
   display: flex;
   flex-direction: column;
 }
 
-.intermdivrightupper {
-  flex: 1 1 auto;
-  height: auto;
+.section2 div:first-child {
+  flex: 5;
+  background-color: #ff5d5d;
   border-radius: 20px 20px 0 0;
-  background-color: #ff5e5e;
-  padding: 30px 40px 20px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* gap: 10px; */
+  padding: 32px;
 }
 
-.intermdivright div:last-child {
-  /* flex-grow: 1;
-  flex-shrink: 1; */
-  height: 400px;
-}
-
-.intermdivright img {
+.section2 div:last-child {
+  flex: 4;
+  background-color: black;
+  background-image: url(../img/maps_cnuhsr.png);
+  background-size: cover;
+  background-position: center;
   border-radius: 0 0 20px 20px;
-  width: 100%;
-  object-fit: cover;
 }
 
 h2 {
   font-family: TS-Med;
-  font-weight: bolder;
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 20px;
 }
 
-#description {
+.section1 p {
   font-family: Georgia;
+  font-weight: lighter;
   font-size: 20px;
+  line-height: 24px;
 }
 
-h3 {
-  font-family: TS-Med;
-  font-weight: bolder;
-  font-size: 30px;
+.section2 h3 {
+  font-size: 32px;
+  font-weight: bold;
   line-height: 40px;
+  margin-bottom: 20px;
 }
 
-.intermdivrightupper p {
-  font-weight: bolder;
-  color: black;
+.section2 p {
+  font-size: 16px;
   line-height: 20px;
+  margin-bottom: 20px;
 }
 
-#voyage {
-  width: 155px;
-  height: 55px;
-  color: white;
+.section button {
+  height: 54px;
+  width: 154px;
+  border-radius: 14px;
   background-color: black;
+  color: white;
   border: none;
-  font-family: TS-Reg;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 400;
 }
-
-.groupphoto img:hover {
-  opacity: 0.75;
-}
-
-#voyage:hover {
-  background-color: #4c1c1d;
-}
+/* .section2 div:last-child img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+} */
 
 /* ----------------------------------------------------- */
 /* ---------------------- CARROUSSEL ------------------- */
@@ -538,7 +525,6 @@ a.footerspan {
 
   .navmain div {
     width: calc(25% - 7.5px);
-    /* flex: 0 0 auto; */
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -562,43 +548,27 @@ a.footerspan {
     display: flex;
   }
 
-  .intermdiv {
-    height: 472px;
-    display: flex;
+  .section {
     flex-direction: column;
     gap: 50px;
   }
 
-  .intermdiv > div:first-child {
+  .section1,
+  .section2 {
     width: 100%;
   }
 
-  .intermdivright {
-    width: 100%;
-    display: flex;
+  .section2 {
+    margin-left: 0;
     flex-direction: row;
-    /* height: 200px; */
   }
 
-  .intermdivrightupper {
-    width: 50%;
-    height: auto;
-    border-radius: 20px 0px 0 20px;
-    padding: 30px 20px 30px 20px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    gap: 10px;
+  .section2 div:first-child {
+    border-radius: 20px 0 0 20px;
   }
-  .intermdivright div:nth-child(2) {
-    width: 50%;
-    height: 100%;
-  }
-  .intermdivright img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 0 20px 20px 0px;
+
+  .section2 div:last-child {
+    border-radius: 0 20px 20px 0;
   }
 }
 
@@ -615,23 +585,9 @@ a.footerspan {
     width: 132px;
   }
 
-  /* .groupphoto > img {
-    flex: 3;
-    object-fit: cover;
-  } */
-
   .rightpics {
     display: none;
-    /* flex-direction: column;
-    gap: 2px;
-    flex: 2; */
   }
-
-  /* .rightpics img {
-    height: calc(50% - 1px);
-    width: 100%;
-    object-fit: cover;
-  } */
 
   header nav {
     gap: 0px;
@@ -656,5 +612,21 @@ a.footerspan {
   .navmain div {
     width: auto;
     gap: 20px;
+  }
+
+  .section {
+    height: 670px;
+  }
+
+  .section2 {
+    flex-direction: column;
+  }
+
+  .section2 div:first-child {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .section2 div:last-child {
+    border-radius: 0 0 20px 20px;
   }
 }
