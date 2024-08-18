@@ -307,10 +307,13 @@ h2 {
 
 .startcarrousel {
   margin-bottom: 30px;
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .leftcarroussel {
-  width: 220px;
+  flex: 1;
+  padding-right: 15px;
 }
 
 .leftcarroussel h3 {
@@ -330,33 +333,35 @@ h2 {
 }
 
 .carroussel {
-  width: 800px;
-  height: 330px;
+  flex: 3;
+  /* height: 330px; */
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
   overflow-x: scroll;
   gap: 10px;
   justify-content: space-between;
+  /* background-color: grey; */
 }
 
-.carrousel > div {
-  /* width: 260px; */
-  /* height: 192px; */
+div.carroussel > div {
+  /* background-color: red; */
+  width: calc((100% - 20px) / 3);
   flex-shrink: 0;
 }
 
 div.carrousselpic {
   position: relative;
-  width: 260px;
-  height: 192px;
-  background-color: grey;
+  /* width: 260px;
+  height: 192px; */
+  /* background-color: blue; */
   margin-bottom: 5px;
 }
 
 div.carrousselpic img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 27/20;
+  /* height: 100%; */
   object-fit: fill;
 }
 
@@ -427,7 +432,7 @@ div.carrousselcomments {
 p.monumentdescription {
   font-family: TS-Reg;
   font-size: 13px;
-  width: 260px;
+  /* width: 260px; */
   text-justify: auto;
 }
 
