@@ -2,6 +2,49 @@
 /* --------------------- GLOBAL ---------------------*/
 /* ------------------------------------------------- */
 
+/* .modal {
+  display: none;
+} */
+
+.backgroundmodal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: fixed;
+  top: 20vh;
+  left: 30vw;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: lightgrey;
+  z-index: 20;
+  padding: 30px;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.form p {
+  margin-bottom: 30px;
+}
+
+/* .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+} */
+
 body {
   font-family: TS-Reg, sans-serif;
   background-color: white;
