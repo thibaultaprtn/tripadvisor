@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("document loaded");
@@ -25,7 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
       //     });
       //   console.log("test ===>", test);
 
-      const response = await axios.post(`${process.env.URI}/form`, data);
+      const response = await axios.post(
+        `https://site--tripadvisor-backend--jwp52j9xkmxc.code.run/form`,
+        data
+      );
       console.log(response);
       console.log(response.data);
     });
