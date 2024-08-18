@@ -37,6 +37,10 @@
   margin-bottom: 30px;
 }
 
+#contactform {
+  z-index: 30;
+}
+
 /* .form form {
   display: flex;
   flex-direction: column;

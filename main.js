@@ -1,21 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("document loaded correctly");
+  console.log("document loaded");
 
   document
     .querySelector("#contactForm")
     .addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      console.log("Le bouton submit fonctionne");
-
       const data = {
-        firstname: document.querySelector("#fname").value,
-        lastname: document.querySelector("#lname").value,
+        firstname: document.querySelector("#firstname").value,
+        lastname: document.querySelector("#lastname").value,
         email: document.querySelector("#email").value,
         subject: document.querySelector("#subject").value,
         message: document.querySelector("#message").value,
       };
 
       console.log(data);
+
+      //   const test = await axios
+      //     .get("http://localhost:3000/")
+      //     .then((response) => {
+      //       return response;
+      //     });
+      //   console.log("test ===>", test);
+
+      const response = await axios.post("http://localhost:3000/form", data);
+      console.log(response);
+      console.log(response.data);
     });
 });
