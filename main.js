@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("document loaded");
 
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //     });
       //   console.log("test ===>", test);
 
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(`${process.env.URI}/form`, data);
       console.log(response);
       console.log(response.data);
     });
